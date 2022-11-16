@@ -7,11 +7,11 @@
     <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-<t:headerWelcome/>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-<div class="site-wrap">
 
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<t:headerAdmin/>
+<div class="site-wrap">
     <div class="site-section" id="programs-section">
         <div class="container">
             <div class="row mb-5 justify-content-center">

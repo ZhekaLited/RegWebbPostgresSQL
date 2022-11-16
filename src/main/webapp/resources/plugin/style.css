@@ -1,0 +1,249 @@
+.table {
+    border: none;
+    margin-top: 187px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.table tbody td {
+    text-align: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.table thead tr th:first-child, .table tbody tr td:first-child {
+    border-left: none;
+}
+
+.table thead tr th:last-child, .table tbody tr td:last-child {
+    border-right: none;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #f3f3f3;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    List-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin-right: 147px;
+    margin-left: -100px;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navbar-brand {
+    margin-left: 109px;
+    position: relative;
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #0b0b0b;
+
+}
+
+.navbar-brand:hover {
+    color: #0b0b0b;
+}
+
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+
+.site-title {
+    color: #000;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+    margin-left: 576px;
+    position: absolute;
+    top: 188px;
+}
+
+.crop {
+    margin-left: 1316px;
+    position: absolute;
+    top: 255px;
+    text-decoration: none;
+}
+
+.plus {
+    margin-left: 659px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    margin-top: 131px;
+}
+
+.edit {
+    width: 23px;
+    height: 23px;
+}
+
+.d29 {
+    padding: 266px;
+    background: white;
+    border-radius: 20px;
+    width: 1000px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 58px;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 60%);
+}
+
+.logo-title {
+    color: #000;
+    font-weight: 400;
+    margin-left: 141px;
+    position: absolute;
+    top: 23%;
+}
+
+.window-write {
+    width: 327px;
+    padding: 6px 20px;
+    margin: 11px 363px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-left: -188px;
+}
+
+.window-write:focus {
+    border: 3px solid #555;
+}
+
+.form-dts {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: -140px
+}
+
+.button {
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.btn-group .button {
+    background-color: #7971ea; /* Green */
+    border: 1px solid #7971ea;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    margin-left: 34%;
+    margin-top: 52px;
+}
+
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+    background-color: #615dc2;
+}
+
+.list_user {
+    margin-left: 40%;
+    margin-top: 21%;
+}
+
+.cross {
+    cursor: pointer;
+}
+
+#footer {
+    position: relative; /* Фиксированное положение */
+    left: 0;
+    bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #c7c7c7;
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    height: 67px;
+    opacity: .8;
+}
+
+.icon-facebook {
+    width: 50px;
+    height: 47px;
+    margin-left: 73%;
+}
+
+.icon-instagram {
+    width: 50px;
+    height: 47px;
+    margin-left: 13px;
+}
+
+.icon-telegram {
+    width: 50px;
+    height: 47px;
+    margin-left: 13px;
+}
+
+.icon-user {
+    color: red;
+}

@@ -11,37 +11,9 @@ import java.util.List;
  * <p>
  * UserDAO
  */
-public class UserDAO {
+public class UserDAO implements Dao {
 
-    private final List<User> store = new ArrayList<>();
-
-    public User getById(int id) {
-
-        User result = new User();
-        result.setId(-1);
-
-        for (User user : store) {
-            if (user.getId() == id) {
-                result = user;
-            }
-        }
-
-        return result;
-    }
-
-    public User getUserByLoginPassword(final String login, final String password) {
-
-        User result = new User();
-        result.setId(-1);
-
-        for (User user : store) {
-            if (user.getLogin().equals(login) && user.getPassword().equals(password)) {
-                result = user;
-            }
-        }
-
-        return result;
-    }
+    public static List<User> store = new ArrayList<>();
 
     public boolean add(final User user) {
 

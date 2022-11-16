@@ -6,16 +6,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static ru.javavision.dao.UserDAO.store;
+
 /**
  * Welcome.
- * Show welcome page.
+ * Show adminPanel page.
  */
-
-public class welcomeServlet extends HttpServlet {
+public class AdminPanel extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getSession().setAttribute("User",store);
         req.setAttribute("hide" , "hidden");
-        req.setAttribute("hideAdmin" , "hidden");
-        req.getRequestDispatcher("/WEB-INF/jsp/welcome.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/adminPanel.jsp").forward(req,resp);
+
     }
 }

@@ -1999,7 +1999,11 @@ fieldset:disabled a.btn {
 .btn-primary {
   color: #fff;
   background-color: #7971ea;
-  border-color: #7971ea; }
+  border-color: #7971ea;
+  margin-top: -37px;
+  margin-right: auto;
+  margin-left: auto;
+}
   .btn-primary:hover {
     color: #fff;
     background-color: #5a50e5;
@@ -7328,5 +7332,6 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */

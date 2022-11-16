@@ -6,16 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Welcome.
- * Show welcome page.
- */
-
-public class welcomeServlet extends HttpServlet {
+public class AdminMenu extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("hide" , "hidden");
-        req.setAttribute("hideAdmin" , "hidden");
-        req.getRequestDispatcher("/WEB-INF/jsp/welcome.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/adminmenu.jsp").forward(req,resp);
     }
 }

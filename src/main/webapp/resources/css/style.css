@@ -665,7 +665,8 @@ h1, h2, h3, h4, h5,
 .form-box {
   padding: 40px;
   background: #fff;
-  border-radius: 7px; }
+  border-radius: 7px;
+  margin-top: 67px;}
 
 .site-section {
   padding: 4em 0;

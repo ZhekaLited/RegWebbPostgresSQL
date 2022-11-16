@@ -78,12 +78,15 @@ public class AuthFilter implements Filter {
 
             req.getRequestDispatcher("/WEB-INF/jsp/welcome.jsp").forward(req, res);
 
+        } else if (role.equals(User.ROLE.ADMIN)) {
+
+            req.getRequestDispatcher("/WEB-INF/jsp/adminmenu.jsp").forward(req, res);
+
         } else {
 
             req.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(req, res);
         }
     }
-
 
     @Override
     public void destroy() {

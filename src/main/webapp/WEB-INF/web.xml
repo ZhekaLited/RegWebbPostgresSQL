@@ -17,9 +17,9 @@
 
     <!--Logout servlet-->
     <servlet>
-    <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>ru.javavision.servlets.servlet.LogoutServlet</servlet-class>
-</servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.LogoutServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
@@ -34,6 +34,56 @@
     <servlet-mapping>
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminPanelServlet</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.AdminPanel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminPanelServlet</servlet-name>
+        <url-pattern>/adminPanel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminMenuServlet</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.AdminMenu</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminMenuServlet</servlet-name>
+        <url-pattern>/adminMenu</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddPanelServlete</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.AddPanel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddPanelServlete</servlet-name>
+        <url-pattern>/addPanel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RemovePanelServlete</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.RemovePanel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RemovePanelServlete</servlet-name>
+        <url-pattern>/removePanel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditPanelServlete</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.EditPanel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditPanelServlete</servlet-name>
+        <url-pattern>/editPanel</url-pattern>
     </servlet-mapping>
 
 
