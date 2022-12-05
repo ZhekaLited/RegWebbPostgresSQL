@@ -1,8 +1,8 @@
 package ru.javavision.model;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.sql.Date;
+import java.time.LocalDate;
+import java.util.List;
 
 /**
  * Author : Evgeniy Nechaev .
@@ -11,38 +11,52 @@ import java.util.Date;
  */
 public class User {
 
-    private int id;
+    private Integer Id;
+
 
     private String login;
 
     private String password;
 
-    private String email;
-    private String surname;
+    private int age;
+
+    private int salary;
 
     private String name;
 
-    private String patronymic;
+    private LocalDate birthday = null;
 
-    private Date birthday = null;
-    private ROLE role;
 
-    private SimpleDateFormat formatDate = new SimpleDateFormat("dd.MM.yyyy");
 
-    public String getEmail() {
-        return email;
+    private List<String> role;
+
+    public User(Integer Id, String login, String password, int age, int salary, String name, LocalDate birthday, List<String> role) {
+        this.Id = Id;
+        this.login = login;
+        this.password = password;
+        this.age = age;
+        this.salary = salary;
+        this.name = name;
+        this.birthday = birthday;
+        this.role = role;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public User() {
     }
 
-    public String getSurname() {
-        return surname;
+    public List<String> getRole() {
+        return role;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setRole(List<String> role) {
+        this.role = role;
+    }
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public String getName() {
@@ -51,55 +65,6 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getPatronymic() {
-        return patronymic;
-    }
-
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
-    }
-
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        try {
-            this.birthday = formatDate.parse(birthday);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public User() {
-    }
-
-    public User(int id, String login, String password, String email, String surname, String name, String patronymic, String birthday, ROLE role) {
-        this.id = id;
-        this.login = login;
-        this.password = password;
-        this.role = role;
-        this.email = email;
-        this.surname = surname;
-        this.name = name;
-        this.patronymic = patronymic;
-
-        try {
-            this.birthday = formatDate.parse(birthday);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getLogin() {
@@ -118,15 +83,49 @@ public class User {
         this.password = password;
     }
 
-    public ROLE getRole() {
-        return role;
+    public int getAge() {
+        return age;
     }
 
-    public void setRole(ROLE role) {
-        this.role = role;
+    public void setAge(int age) {
+        this.age = age;
     }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
 
     public enum ROLE {
         USER, UNKNOWN, ADMIN
     }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) {
+//            return true;
+//        }
+//        if (o == null || getClass() != o.getClass()) {
+//            return false;
+//        }
+//        User user = (User) o;
+//        return login.equals(user.getLogin());
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return this.id;
+//    }
 }

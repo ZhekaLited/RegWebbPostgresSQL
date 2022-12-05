@@ -14,8 +14,8 @@ import java.io.IOException;
 public class welcomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("hide" , "hidden");
-        req.setAttribute("hideAdmin" , "hidden");
+        req.setAttribute("hide", "hidden");
+        req.setAttribute("hideAdmin", "hidden");
         req.getRequestDispatcher("/WEB-INF/jsp/welcome.jsp").forward(req, resp);
     }
 }

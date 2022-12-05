@@ -21,9 +21,8 @@
                 <div class="col-12">
                     <div class="row align-items-center">
 
-
                         <div class="col-lg-5 ml-sign text-center" data-aos="fade-up" data-aos-delay="500">
-                            <form method="POST" class="form-box">
+                            <form action="<%=request.getContextPath()%>/login" class="form-box" method="post">
                                 <h3 class="h4 text-black mb-4">Sign Up</h3>
                                 <div class="form-group">
                                     <input type="text" class="form-control" required placeholder="login"

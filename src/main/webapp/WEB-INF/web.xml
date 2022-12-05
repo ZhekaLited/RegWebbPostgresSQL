@@ -4,18 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <!--filter check exist session for sign in-->
-    <filter>
-        <filter-name>AuthFilter</filter-name>
-        <filter-class>ru.javavision.servlets.filter.AuthFilter</filter-class>
-    </filter>
 
-    <filter-mapping>
-        <filter-name>AuthFilter</filter-name>
-        <url-pattern>/</url-pattern>
-    </filter-mapping>
-
-    <!--Logout servlet-->
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>ru.javavision.servlets.servlet.LogoutServlet</servlet-class>
@@ -35,7 +24,6 @@
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/welcome</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>AdminPanelServlet</servlet-name>
         <servlet-class>ru.javavision.servlets.servlet.AdminPanel</servlet-class>
@@ -45,6 +33,7 @@
         <servlet-name>AdminPanelServlet</servlet-name>
         <url-pattern>/adminPanel</url-pattern>
     </servlet-mapping>
+
 
     <servlet>
         <servlet-name>AdminMenuServlet</servlet-name>
@@ -84,6 +73,16 @@
     <servlet-mapping>
         <servlet-name>EditPanelServlete</servlet-name>
         <url-pattern>/editPanel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>ru.javavision.servlets.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
 

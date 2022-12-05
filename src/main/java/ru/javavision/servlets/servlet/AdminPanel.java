@@ -1,23 +1,32 @@
 package ru.javavision.servlets.servlet;
 
+import ru.javavision.model.User;
+import ru.javavision.service.UserServiceImplFactory;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
-import static ru.javavision.dao.UserDAO.store;
 
 /**
  * Welcome.
  * Show adminPanel page.
  */
 public class AdminPanel extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getSession().setAttribute("User",store);
-        req.setAttribute("hide" , "hidden");
-        req.getRequestDispatcher("/WEB-INF/jsp/adminPanel.jsp").forward(req,resp);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doGet(request, response);
+    }
 
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.setAttribute("hide", "hidden");
+        List<User> listUser = UserServiceImplFactory.getUserService().selectAllUsers();
+        request.setAttribute("listUser", listUser);
+        request.getRequestDispatcher("WEB-INF/jsp/adminPanel.jsp").forward(request, response);
     }
 }

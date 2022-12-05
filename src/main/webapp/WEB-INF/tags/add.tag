@@ -15,19 +15,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
           rel="stylesheet">
- </head>
+</head>
 <body>
 <header>
 
     <nav class="navbar">
         <div class="container">
-            <a href="<c:url value="/adminMenu"/>" class="navbar-brand">LookSoft</a>
+            <a href="<c:url value="/adminMenu"/>" class="navbar-brandd">LookSoft</a>
 
             <div class="navbar-wrap">
                 <ul class="navbar-menu">
-                    <li><a href="<%=request.getContextPath()%>/adminPanel"  class="icon-user" ${hide}>Users</a></li>
-                    <li><a href="<%=request.getContextPath()%>/logout">Logout</a></li>
+                    <li><a href="<%=request.getContextPath()%>/adminPanel" class="icon-user" ${hide}>Users</a></li>
                 </ul>
+                <div class="navbar-wrap navbar-menu">
+                    <li><a href="<%=request.getContextPath()%>/logout">Logout</a></li>
+
+                <ul>
+                </ul>
+            </div>
             </div>
         </div>
     </nav>

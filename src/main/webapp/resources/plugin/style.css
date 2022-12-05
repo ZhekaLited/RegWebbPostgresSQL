@@ -1,6 +1,6 @@
 .table {
     border: none;
-    margin-top: 187px;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,9 +52,9 @@
 }
 
 .navbar-menu {
-    List-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
+    List-style-type: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
 
 }
 
@@ -71,35 +71,44 @@
 }
 
 .navbar-wrap {
-    display: flex;
-    flex-flow: row nowrap;
+    display: flex !important;
+    flex-flow: row nowrap !important;
 }
 
 .navbar-brand {
-    margin-left: 109px;
-    position: relative;
-    font-weight: 900;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #0b0b0b;
+    margin-left: 109px !important;
+    position: relative!important;
+    font-weight: 900!important;
+    font-size: 1.3rem!important;
+    text-decoration: none!important;
+    color: #0b0b0b!important;
+
+}
+.navbar-brandd {
+    margin-right: 970px !important;
+    position: relative!important;
+    font-weight: 900!important;
+    font-size: 2.0rem!important;
+    text-decoration: none!important;
+    color: #0b0b0b!important;
 
 }
 
 .navbar-brand:hover {
-    color: #0b0b0b;
+    color: #0b0b0b!important;
 }
 
 .navbar-menu li a:hover {
-    opacity: 1;
+    opacity: 1!important;
 }
 
 .site-title {
-    color: #000;
-    margin-bottom: 1.8rem;
-    font-weight: 600;
-    margin-left: 576px;
-    position: absolute;
-    top: 188px;
+    color: #000!important;
+    margin-bottom: 1.8rem!important;
+    font-weight: 600!important;
+    margin-left: 576px!important;
+    position: absolute!important;
+    top: 188px!important;
 }
 
 .crop {
@@ -123,45 +132,46 @@
 }
 
 .d29 {
-    padding: 266px;
-    background: white;
-    border-radius: 20px;
-    width: 1000px;
-    height: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 58px;
-    box-shadow: 0 1px 20px rgb(0 0 0 / 60%);
+    padding: 266px !important;;
+    background: white !important;
+    border-radius: 20px !important;
+    width: 1000px !important;
+    height: 2px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 58px !important;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 60%) !important;
 }
 
 .logo-title {
-    color: #000;
-    font-weight: 400;
-    margin-left: 141px;
-    position: absolute;
-    top: 23%;
+    color: #000 !important;
+    font-weight: 400 !important;
+    margin-left: 141px !important;
+    position: absolute !important;
+    top: 23% !important;
 }
 
 .window-write {
-    width: 327px;
-    padding: 6px 20px;
-    margin: 11px 363px;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    margin-left: -188px;
+    width: 327px !important;
+    height: 48px !important;
+    padding: 6px 20px !important;
+    margin: 11px 363px !important;
+    box-sizing: border-box !important;
+    border: 3px solid #ccc !important;
+    -webkit-transition: 0.5s !important;
+    transition: 0.5s !important;
+    outline: none !important;
+    margin-left: -188px !important;
 }
 
 .window-write:focus {
-    border: 3px solid #555;
+    border: 3px solid #555 !important;
 }
 
 .form-dts {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: -140px
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+    margin-top: -140px !important;
 }
 
 .button {
@@ -183,7 +193,7 @@
 }
 
 .btn-group .button {
-    background-color: #7971ea; /* Green */
+    background-color: #7971ea;
     border: 1px solid #7971ea;
     color: white;
     padding: 15px 32px;
@@ -193,8 +203,8 @@
     font-size: 16px;
     cursor: pointer;
     float: left;
-    margin-left: 34%;
-    margin-top: 52px;
+    margin-left: 85%;
+    margin-top: 68px;
 }
 
 .btn-group .button:not(:last-child) {
@@ -224,6 +234,8 @@
     width: 100%; /* Ширина слоя */
     height: 67px;
     opacity: .8;
+    margin-top: 122px;
+
 }
 
 .icon-facebook {
@@ -246,4 +258,80 @@
 
 .icon-user {
     color: red;
+}
+
+.brd {
+    border: 4px double black; /* Параметры границы */
+    background: #fc3; /* Цвет фона */
+    padding: 10px;
+}
+
+.erorr {
+    color: red;
+    margin-left: 96px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #aaf0d1;
+/ / магическая мята border-bottom: 1 px solid gray;
+    text-align: center;
+}
+
+/* Select */
+.form__role ul {
+    list-style: none;
+}
+
+.select__role {
+    margin: 10px 60px 0;
+    border-radius: 0.5rem;
+    border: 1px solid #bdbdbd;
+    width: 310px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+
+    cursor: pointer;
+}
+
+.select__role:hover {
+    background: #2F3742;
+    border: 1px solid #2F3742;
+    color: #fff;
+}
+
+.list__role {
+    display: none;
+    position: absolute;
+    margin-left: 9px;
+    margin-top: 15px;
+
+    border-radius: 0.5rem;
+    border: 1px solid #bdbdbd;
+    width: 271px;
+    background: #fff;
+}
+
+.list__role__item {
+    border-bottom: 1px solid #bdbdbd;
+    margin: 0;
+    margin-left: -31px;
+    list-style: none;
+    padding: 10px;
+}
+
+.list__role__item:last-child {
+    border-bottom: none;
+}
+
+.icon-item {
+    margin-left: -187px;
+    margin-top: 19px;
+    width: 131%;
+    line-height: 23px;
+
 }
